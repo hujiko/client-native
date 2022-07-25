@@ -141,6 +141,11 @@ maps_entries_one:
         description: Mapfile attribute storage_name
         required: true
         type: string
+      - name: key
+        in: query
+        description: If set, only the entry matching this key is deleted.
+        type: string
+        required: false
       - name: force_sync
         in: query
         description: If true, immediately syncs changes to disk
